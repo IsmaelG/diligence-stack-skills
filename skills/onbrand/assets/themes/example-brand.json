@@ -1,0 +1,76 @@
+{
+ "brand": "Meridian Partners",
+ "short": "MERIDIAN",
+ "source": "https://meridian.example",
+ "colors": {
+  "ink": "#18191B",
+  "muted": "#3F4246",
+  "accent": "#010506",
+  "accent_fill": "#FFAE19",
+  "band_fill": "#010506",
+  "band_text": "#FFFCF6",
+  "header_fill": "#F3F0E9",
+  "zebra": "#FFFCF6",
+  "callout": "#F3F0E9",
+  "hairline": "#BCBDBE",
+  "rule": "#FFAE19",
+  "on_band_accent": "#FFAE19",
+  "on_band_muted": "#BDBCB8"
+ },
+ "semantic": {
+  "error": "#3B0B0B",
+  "warning": "#5E5515",
+  "success": "#114E0B"
+ },
+ "score_ramp": {
+  "0": "#F8E4E4",
+  "1": "#F8E4E4",
+  "2": "#FCF8D8",
+  "3": "#FCF8D8",
+  "4": "#CEF5CA",
+  "5": "#A4D0A0"
+ },
+ "chart": [
+  "#010506",
+  "#FFAE19",
+  "#00818C",
+  "#3F4246",
+  "#9FA3A9",
+  "#D4D5D8"
+ ],
+ "font": {
+  "brand": "Plus Jakarta Sans",
+  "brand_heading": "Anton",
+  "fallback": "Calibri",
+  "fallback_heading": "Arial Black"
+ },
+ "notes": [
+  "example theme shipped with the skill — replace it by running make_theme.py on your own target's site",
+  "working from 17 declared tokens; observed-only colours were kept for chart fill-in",
+  "#FFAE19 is 1.9:1 on white — unusable as ink; kept as accent_fill (a block colour), accent went to #00818C",
+  "error band uses the brand's own system colour #3B0B0B",
+  "warning band uses the brand's own system colour #5E5515",
+  "success band uses the brand's own system colour #114E0B",
+  "chart series 5 and 6 differ by <15 L* — they will merge in greyscale; reorder or replace one",
+  "reviewed: accent moved from #00818C to #010506 — gunmetal is declared but unused on the live site; chart ramp reordered for greyscale separation"
+ ],
+ "semantic_light": {
+  "error": "#F8E4E4",
+  "warning": "#FCF8D8",
+  "success": "#CEF5CA"
+ },
+ "semantic_band": {
+  "error": "#8E1A1A",
+  "warning": "#5E5515",
+  "success": "#13560C"
+ },
+ "type": {
+  "body": "Plus Jakarta Sans",
+  "body_fallback": "Calibri",
+  "display": "Anton",
+  "display_fallback": "Arial Black",
+  "display_case": "upper",
+  "display_tracking": -0.0167,
+  "display_leading": 1.2
+ }
+}

@@ -30,6 +30,15 @@ The single most important early call, because it determines where the facts live
 
 State the classification explicitly in your head; it changes what "thorough" means.
 
+## Step 0b — Market context (runs /marketdd)
+
+Before Step 1, look in the output folder for a `*_marketdd.docx` covering the target's primary market and dated within the last 6 months.
+
+- **None found** → run `/marketdd` on that market first, without asking questions: perimeter = the target's primary market, geography = its home region, mandate = this target, language = the language of this memo. It delivers its own Word + PDF report next to this memo.
+- **Found** → reuse it.
+
+Either way, the market report feeds Step 2: market size and growth, where the target sits in the value chain, the competitor set and their priority customer segments. Cite it in the source log (Exhibit F) as the market reference, and keep its confidence tags.
+
 ## Step 1 — Financials, or the best available proxy
 
 For anything with real numbers, pull **3 years** of: revenue, growth, gross margin, EBIT/operating margin, net income, and the 2–3 metrics that actually matter in that industry (for a bank: NII, cost/income ratio, CET1, RoTE; for SaaS: ARR, NRR, CAC payback; for payments: TPV, take rate).
@@ -178,3 +187,4 @@ Write like a sharp analyst briefing a principal who is short on time and allergi
 
 - `references/memo-schema.md` — the exact JSON structure `build_memo.py` expects. Read before writing `memo.json`.
 - `references/sources.md` — where to find filings, registries, and proxy data by jurisdiction and company type. Check it when a data trail goes cold.
+- `/marketdd` (separate skill) — the market deep dive run in Step 0b.

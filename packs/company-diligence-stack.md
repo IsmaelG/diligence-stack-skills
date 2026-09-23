@@ -3,14 +3,14 @@
 Everything you need to walk into a meeting, a board seat or a first call knowing more about a company than the person across the table.
 
 ```
-/duediligence  ->  /companypeople  ->  /targetpeople        (/interviewlog feeds the evidence in, /onbrand restyles the result)
+/duediligence (runs /marketdd automatically)  ->  /companypeople  ->  /targetpeople        (/interviewlog feeds the evidence in, /onbrand restyles the result)
 ```
 
 ## Skills in this pack
 
 | Skill | What it does |
 |---|---|
-| [`duediligence`](../skills/duediligence) | Give it a company name, get back a short report you could take into a meeting: the money (or the best signals available when there are no accounts), the strategy, who owns the company, an honest list of strengths and weaknesses, and an org chart with the person who really runs digital. |
+| [`duediligence`](../skills/duediligence) | Give it a company name, get back a short report you could take into a meeting: the money (or the best signals available when there are no accounts), the strategy, who owns the company, an honest list of strengths and weaknesses, and an org chart with the person who really runs digital. Automatically runs a market deep-dive on the target's sector first (via the bundled `marketdd` skill) if one doesn't already exist, and folds it in. |
 | [`companypeople`](../skills/companypeople) | Who really decides, mapped out: an org chart, a page on each person — what they have actually done, who backs them, what they say in public — plus a likely work email and a short opening message. |
 | [`targetpeople`](../skills/targetpeople) | How to get in front of named people: every realistic route ranked by the chance it works, with the exact message written for each step and when to send it. |
 | [`interviewlog`](../skills/interviewlog) | Turns messy call notes, voice memos and transcripts into a tidy list of sources — one entry per conversation, with clean quotes you can cite in a report. |
@@ -43,5 +43,6 @@ Ask Claude: **"which diligence skills do you have?"** — it should list them by
 
 ## Notes
 - `interviewlog` and `onbrand` are shared with the [Product Diligence Stack](./product-diligence-stack.md) — install both packs and they simply reuse the same files.
+- `marketdd` ships bundled inside `duediligence`'s zip rather than as its own separate download — `/duediligence` calls it automatically for market context. It's a complete skill in its own right, so `/marketdd` also works directly once installed, if you want a standalone sector study.
 - The worked examples inside are invented, not real clients.
 - Nothing is hard-wired to one folder. The tools save to the Claude app's output folder when there is one, otherwise to a folder you name once, otherwise to wherever you are working.

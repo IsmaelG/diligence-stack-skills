@@ -6,11 +6,11 @@ Claude skills for investors, operators and product people — company diligence,
 
 ## The three packs
 
-- **[Company Diligence Stack](./packs/company-diligence-stack.md)** — `duediligence`, `companypeople`, `targetpeople`, `interviewlog`, `onbrand`. Is this a good company, and who do I need to talk to?
+- **[Company Diligence Stack](./packs/company-diligence-stack.md)** — `duediligence`, `companypeople`, `targetpeople`, `interviewlog`, `onbrand`. Is this a good company, and who do I need to talk to? `duediligence` automatically runs `marketdd` (bundled with it, not a separate download) for market context.
 - **[Product Diligence Stack](./packs/product-diligence-stack.md)** — `productdd`, `cohortlab`, `valuecreation`, `interviewlog`, `onbrand`. Will the product keep growing, and what do we do about it?
 - **[Technical Diligence Stack](./packs/technical-diligence-stack.md)** — `technicaldd`, `interviewlog`, `onbrand`. Does the technology hold up under the hood? Chains after either of the packs above once a target is identified.
 
-`interviewlog` and `onbrand` are shared by all three packs. All 9 skills live under [`/skills`](./skills), one folder each, and are the single source of truth for this project — the downloadable zips on the site are built straight from this repo.
+`interviewlog` and `onbrand` are shared by all three packs. All 10 skills live under [`/skills`](./skills), one folder each, and are the single source of truth for this project — the downloadable zips on the site are built straight from this repo. (`marketdd` is the 10th — it isn't listed as its own pack item since it ships bundled inside `duediligence`, but it's a complete skill and works standalone too.)
 
 ## Install
 
